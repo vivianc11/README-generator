@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   let licenseType = license;
   let chosenLicense = '';
   if (licenseType === 'MIT') {
-    return chosenLicense = '([![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+    return chosenLicense = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
   } else if (licenseType === 'APACHE') {
     return chosenLicense = '![ApacheBadge](https://img.shields.io/badge/License-APACHE-blue)';
   } else if (licenseType === 'GPL') {
@@ -30,51 +30,47 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-    # ${data.projectTitle}
-      ${renderLicenseBadge(data.license)}
+# ${data.projectTitle}
+${renderLicenseBadge(data.license)}
 
-    ## Description
-    ${data.descr}
+## Description
+${data.descr}
 
-    ## Table of Contents
-    * Installation Instructions
-    * Usage Information
-    * License
-    * Contribution Guidelines
-    * Test Instructions
-    * Questions
-    
-    ## Installation Instructions
-    Follow the instructions below to install:
-    \`\`\`
-    ${data.installation}
-    \`\`\`
+## Table of Contents
+* Installation Instructions
+* Usage Information
+* License
+* Contribution Guidelines
+* Test Instructions
+* Questions
 
-    ## Usage Information
-    ${data.usage}
+## Installation Instructions
+Follow the instructions below to install:
+\`\`\`
+${data.installation}
+\`\`\`
 
-    ## License
-    ${data.license}
-    ${renderLicenseLink(data.license)}
+## Usage Information
+${data.usage}
 
-    ## Contribution Guidelines
-    ${data.contribution}
+## License
+${data.license}
+${renderLicenseLink(data.license)}
 
-    ## Test Instructions
-    ${data.tests}
+## Contribution Guidelines
+${data.contribution}
 
-    ## Questions
-    If there are any questions, please contact me through these options provided below:
+## Test Instructions
+${data.tests}
 
-    ${data.GitHub}
-    ${data.email}
+## Questions
+If there are any questions, please contact me through these options provided below:
+
+${data.GitHub}
+${data.email}
 `;
 }
 

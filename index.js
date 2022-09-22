@@ -65,6 +65,7 @@ function init() {
         console.log("Your README.md is being generated!");
         writeToFile('README.md', generateMarkdown({...responses}))
     })
+    .catch((err) => console.error(err));
 }
 
 // Function call to initialize app
