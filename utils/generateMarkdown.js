@@ -1,22 +1,34 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseType = data.license;
+  let licenseType = license;
   let chosenLicense = '';
   if (licenseType === 'MIT') {
-    chosenLicense = '![MITBadge](https://img.shields.io/badge/License-MIT-blue)';
+    return chosenLicense = '![MITBadge](https://img.shields.io/badge/License-MIT-blue)';
   } else if (licenseType === 'APACHE') {
-    chosenLicense = '![ApacheBadge](https://img.shields.io/badge/License-APACHE-blue)';
+    return chosenLicense = '![ApacheBadge](https://img.shields.io/badge/License-APACHE-blue)';
   } else if (licenseType === 'GPL') {
-    chosenLicense = '![GPLBadge](https://img.shields.io/badge/License-GPL-blue)';
+    return chosenLicense = '![GPLBadge](https://img.shields.io/badge/License-GPL-blue)';
   } else {
-    chosenLicense = '';
+    return chosenLicense = '';
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseType = license;
+  let link = '';
+  if (licenseType === 'MIT') {
+    return link = 'https://choosealicense.com/licenses/mit/';
+  } else if (licenseType === 'APACHE') {
+    return link = 'https://www.apache.org/licenses/LICENSE-2.0';
+  } else if (licenseType === 'GPL') {
+    return link = 'https://www.gnu.org/licenses/gpl-3.0.en.html';
+  } else {
+    return link = '';
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -26,6 +38,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
     # ${data.projectTitle}
+      ${renderLicenseBadge(data.license)}
 
     ## Description
     ${data.descr}
@@ -49,6 +62,7 @@ function generateMarkdown(data) {
 
     ## License
     ${data.license}
+    ${renderLicenseLink(data.license)}
 
     ## Contribution Guidelines
     ${data.contribution}
