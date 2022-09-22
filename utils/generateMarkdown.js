@@ -39,12 +39,17 @@ function generateMarkdown(data) {
 ${data.descr}
 
 ## Table of Contents
-  [Installation Instructions](##Installation-Instructions)
-  [Usage Information](##Usage-Information)
-  [License](##License)
-  [Contribution Guidelines](##Contribution-Guidelines)
-  [Test Instructions](##Test-Instructions)
-  [Questions](##Questions)
+  [Installation Instructions](#Installation-Instructions)
+
+  [Usage Information](#Usage-Information)
+
+  [License](#License)
+
+  [Contribution Guidelines](#Contribution-Guidelines)
+
+  [Test Instructions](#Test-Instructions)
+
+  [Questions](#Questions)
 
 ## Installation Instructions
 Follow the instructions below to install:
