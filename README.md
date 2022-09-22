@@ -1,8 +1,8 @@
 
-# README.md Generator ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README generator ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-This generates a README.md for developers so that more time is spent working on the code insteaed of trying to make their own professional README
+A generator that generates a README.md for developers so they can spend more time working on their app code
 
 ## Table of Contents
 * Installation Instructions
@@ -19,7 +19,7 @@ npm i inquirer
 ```
 
 ## Usage Information
-use git clone and the repo url to grab the files
+git clone the repo to contribute
 
 ## License
 MIT: https://choosealicense.com/licenses/mit/
