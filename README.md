@@ -41,3 +41,6 @@ If there are any questions, please contact me through these options provided bel
 
 vivianc11
 blahblah@gmail.com
+
+## Link to Funtionality Walkthrough Video
+https://drive.google.com/file/d/1wm_8Zb0FAGxwQmkN32X7PJC6WPU_9FOC/view
